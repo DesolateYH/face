@@ -39,8 +39,8 @@ public class FileDataController {
         System.out.println(f);
         String path = String.valueOf(f);*/
         base64 = base64.substring(base64.indexOf(",") + 1);
-        String path = "C:\\Users\\Administrator\\Desktop\\libs\\1.jpg";
-        GenerateImage(base64, path);
+        String path = "./1.jpg";
+        System.out.println(GenerateImage(base64, path));;
         FaceInfoPO faceInfo = faceEngineTest.singleDetection(path);
         return Msg.statu200().add("FaceInfo", faceInfo);
     }

@@ -31,7 +31,8 @@ public class Base64ToPic {
             out.flush();
             out.close();
             return true;
-        } catch (Exception e) {
+        } catch (IOException e) {
+            System.out.println(e.getCause());
             return false;
         }
     }

@@ -13,12 +13,12 @@ public class ArcsoftApplication {
     public static void main(String[] args) {
         SpringApplication.run(ArcsoftApplication.class);
 
-        CFileDataUDP cFileDataUDP = new CFileDataUDP();
+     /*   CFileDataUDP cFileDataUDP = new CFileDataUDP();
         try {
             cFileDataUDP.receive();
         } catch (SocketException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
 
